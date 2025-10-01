@@ -1,0 +1,7 @@
+dataset,records,file
+claims,10000,claims_sample.csv
+patients,5000,patients_sample.csv
+providers,100,providers_sample.csv
+prescriptions,15000,prescriptions_sample.csv
+diagnosis_codes,20,diagnosis_codes_sample.csv
+medications,20,medications_sample.csv

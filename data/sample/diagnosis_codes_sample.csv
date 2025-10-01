@@ -1,0 +1,21 @@
+diagnosis_code,description,category
+E11.9,Type 2 diabetes mellitus without complications,Endocrine
+I25.10,Atherosclerotic heart disease of native coronary artery without angina pectoris,Cardiovascular
+F32.9,"Major depressive disorder, single episode, unspecified",Mental Health
+M79.3,"Panniculitis, unspecified",Musculoskeletal
+K21.9,Gastro-esophageal reflux disease without esophagitis,Gastrointestinal
+G43.909,"Migraine, unspecified, not intractable, without status migrainosus",Neurological
+M25.561,Pain in right knee,Musculoskeletal
+R06.02,Shortness of breath,Respiratory
+Z87.891,Personal history of nicotine dependence,Lifestyle
+I10,Essential hypertension,Cardiovascular
+E78.5,"Hyperlipidemia, unspecified",Endocrine
+M54.5,Low back pain,Musculoskeletal
+R50.9,"Fever, unspecified",General
+K59.00,"Constipation, unspecified",Gastrointestinal
+J44.1,Chronic obstructive pulmonary disease with acute exacerbation,Respiratory
+N18.6,End stage renal disease,Renal
+I48.91,Unspecified atrial fibrillation,Cardiovascular
+G47.00,"Insomnia, unspecified",Neurological
+R10.9,Unspecified abdominal pain,Gastrointestinal
+M25.511,Pain in right shoulder,Musculoskeletal

@@ -1,0 +1,207 @@
+2025-09-29 19:09:40 | INFO | __main__:extract_all_data:245 - Starting full data extraction...
+2025-09-29 19:09:40 | INFO | __main__:extract_claims_data:29 - Starting claims data extraction...
+2025-09-29 19:09:40 | INFO | __main__:extract_claims_data:37 - Generated sample claims data
+2025-09-29 19:09:40 | INFO | utils:save_parquet_with_metadata:86 - Saved 10000 rows to ./data/bronze/claims_raw.parquet
+2025-09-29 19:09:40 | INFO | utils:log_dataframe_info:59 - EXTRACT - claims: 10000 rows, 11 columns
+2025-09-29 19:09:40 | INFO | utils:log_dataframe_info:60 - Memory usage: 2.42 MB
+2025-09-29 19:09:40 | WARNING | utils:log_dataframe_info:65 - Null values found in claims:
+2025-09-29 19:09:40 | WARNING | utils:log_dataframe_info:67 -   readmission_date: 8500 nulls
+2025-09-29 19:09:40 | INFO | __main__:extract_patients_data:56 - Starting patients data extraction...
+2025-09-29 19:09:40 | INFO | __main__:extract_patients_data:64 - Generated sample patients data
+2025-09-29 19:09:40 | INFO | utils:save_parquet_with_metadata:86 - Saved 5000 rows to ./data/bronze/patients_raw.parquet
+2025-09-29 19:09:40 | INFO | utils:log_dataframe_info:59 - EXTRACT - patients: 5000 rows, 8 columns
+2025-09-29 19:09:40 | INFO | utils:log_dataframe_info:60 - Memory usage: 1.09 MB
+2025-09-29 19:09:40 | INFO | __main__:extract_providers_data:83 - Starting providers data extraction...
+2025-09-29 19:09:40 | INFO | __main__:extract_providers_data:91 - Generated sample providers data
+2025-09-29 19:09:40 | INFO | utils:save_parquet_with_metadata:86 - Saved 100 rows to ./data/bronze/providers_raw.parquet
+2025-09-29 19:09:40 | INFO | utils:log_dataframe_info:59 - EXTRACT - providers: 100 rows, 7 columns
+2025-09-29 19:09:40 | INFO | utils:log_dataframe_info:60 - Memory usage: 0.03 MB
+2025-09-29 19:09:40 | INFO | __main__:extract_prescriptions_data:110 - Starting prescriptions data extraction...
+2025-09-29 19:09:40 | INFO | __main__:extract_prescriptions_data:118 - Generated sample prescriptions data
+2025-09-29 19:09:40 | INFO | utils:save_parquet_with_metadata:86 - Saved 15000 rows to ./data/bronze/prescriptions_raw.parquet
+2025-09-29 19:09:40 | INFO | utils:log_dataframe_info:59 - EXTRACT - prescriptions: 15000 rows, 9 columns
+2025-09-29 19:09:40 | INFO | utils:log_dataframe_info:60 - Memory usage: 1.89 MB
+2025-09-29 19:09:40 | INFO | __main__:extract_all_data:258 - Data extraction completed successfully
+2025-09-29 19:09:42 | INFO | __main__:transform_all_data:441 - Starting full data transformation...
+2025-09-29 19:09:42 | INFO | __main__:transform_claims_data:32 - Starting claims data transformation...
+2025-09-29 19:09:42 | INFO | __main__:_clean_claims_data:160 - Cleaning claims data...
+2025-09-29 19:09:42 | INFO | __main__:_clean_claims_data:165 - Removed 0 duplicate claims
+2025-09-29 19:09:42 | INFO | __main__:_clean_claims_data:190 - Claims data cleaned: 10000 records remaining
+2025-09-29 19:09:42 | INFO | __main__:_engineer_claims_features:273 - Engineering claims features...
+2025-09-29 19:09:42 | INFO | __main__:_engineer_claims_features:305 - Claims features engineered successfully
+2025-09-29 19:09:42 | INFO | __main__:_validate_claims_data:409 - Claims data validation completed
+2025-09-29 19:09:42 | INFO | utils:save_parquet_with_metadata:86 - Saved 10000 rows to ./data/silver/claims_clean.parquet
+2025-09-29 19:09:42 | INFO | utils:log_dataframe_info:59 - TRANSFORM - claims: 10000 rows, 19 columns
+2025-09-29 19:09:42 | INFO | utils:log_dataframe_info:60 - Memory usage: 3.31 MB
+2025-09-29 19:09:42 | WARNING | utils:log_dataframe_info:65 - Null values found in claims:
+2025-09-29 19:09:42 | WARNING | utils:log_dataframe_info:67 -   readmission_date: 8500 nulls
+2025-09-29 19:09:42 | WARNING | utils:log_dataframe_info:67 -   los_category: 510 nulls
+2025-09-29 19:09:42 | INFO | __main__:transform_patients_data:64 - Starting patients data transformation...
+2025-09-29 19:09:42 | INFO | __main__:_clean_patients_data:195 - Cleaning patients data...
+2025-09-29 19:09:42 | INFO | __main__:_clean_patients_data:200 - Removed 0 duplicate patients
+2025-09-29 19:09:42 | INFO | __main__:_clean_patients_data:219 - Patients data cleaned: 5000 records remaining
+2025-09-29 19:09:42 | INFO | __main__:_engineer_patients_features:310 - Engineering patients features...
+2025-09-29 19:09:42 | INFO | __main__:_engineer_patients_features:335 - Patients features engineered successfully
+2025-09-29 19:09:42 | INFO | __main__:_validate_patients_data:421 - Patients data validation completed
+2025-09-29 19:09:42 | INFO | utils:save_parquet_with_metadata:86 - Saved 5000 rows to ./data/silver/patients_clean.parquet
+2025-09-29 19:09:42 | INFO | utils:log_dataframe_info:59 - TRANSFORM - patients: 5000 rows, 12 columns
+2025-09-29 19:09:42 | INFO | utils:log_dataframe_info:60 - Memory usage: 1.70 MB
+2025-09-29 19:09:42 | INFO | __main__:transform_providers_data:96 - Starting providers data transformation...
+2025-09-29 19:09:42 | INFO | __main__:_clean_providers_data:224 - Cleaning providers data...
+2025-09-29 19:09:42 | INFO | __main__:_clean_providers_data:229 - Removed 0 duplicate providers
+2025-09-29 19:09:42 | INFO | __main__:_clean_providers_data:244 - Providers data cleaned: 100 records remaining
+2025-09-29 19:09:42 | INFO | __main__:_engineer_providers_features:340 - Engineering providers features...
+2025-09-29 19:09:42 | INFO | __main__:_engineer_providers_features:357 - Providers features engineered successfully
+2025-09-29 19:09:42 | INFO | __main__:_validate_providers_data:429 - Providers data validation completed
+2025-09-29 19:09:43 | INFO | utils:save_parquet_with_metadata:86 - Saved 100 rows to ./data/silver/providers_clean.parquet
+2025-09-29 19:09:43 | INFO | utils:log_dataframe_info:59 - TRANSFORM - providers: 100 rows, 12 columns
+2025-09-29 19:09:43 | INFO | utils:log_dataframe_info:60 - Memory usage: 0.04 MB
+2025-09-29 19:09:43 | INFO | __main__:transform_prescriptions_data:128 - Starting prescriptions data transformation...
+2025-09-29 19:09:43 | INFO | __main__:_clean_prescriptions_data:249 - Cleaning prescriptions data...
+2025-09-29 19:09:43 | INFO | __main__:_clean_prescriptions_data:254 - Removed 0 duplicate prescriptions
+2025-09-29 19:09:43 | INFO | __main__:_clean_prescriptions_data:268 - Prescriptions data cleaned: 15000 records remaining
+2025-09-29 19:09:43 | INFO | __main__:_engineer_prescriptions_features:362 - Engineering prescriptions features...
+2025-09-29 19:09:43 | INFO | __main__:_engineer_prescriptions_features:393 - Prescriptions features engineered successfully
+2025-09-29 19:09:43 | INFO | __main__:_validate_prescriptions_data:437 - Prescriptions data validation completed
+2025-09-29 19:09:43 | INFO | utils:save_parquet_with_metadata:86 - Saved 15000 rows to ./data/silver/prescriptions_clean.parquet
+2025-09-29 19:09:43 | INFO | utils:log_dataframe_info:59 - TRANSFORM - prescriptions: 15000 rows, 16 columns
+2025-09-29 19:09:43 | INFO | utils:log_dataframe_info:60 - Memory usage: 3.31 MB
+2025-09-29 19:09:43 | INFO | __main__:transform_all_data:451 - Data transformation completed successfully
+2025-09-29 19:12:18 | INFO | __main__:extract_all_data:245 - Starting full data extraction...
+2025-09-29 19:12:18 | INFO | __main__:extract_claims_data:29 - Starting claims data extraction...
+2025-09-29 19:12:18 | INFO | __main__:extract_claims_data:37 - Generated sample claims data
+2025-09-29 19:12:18 | INFO | utils:save_parquet_with_metadata:86 - Saved 10000 rows to ./data/bronze/claims_raw.parquet
+2025-09-29 19:12:18 | INFO | utils:log_dataframe_info:59 - EXTRACT - claims: 10000 rows, 11 columns
+2025-09-29 19:12:18 | INFO | utils:log_dataframe_info:60 - Memory usage: 2.42 MB
+2025-09-29 19:12:18 | WARNING | utils:log_dataframe_info:65 - Null values found in claims:
+2025-09-29 19:12:18 | WARNING | utils:log_dataframe_info:67 -   readmission_date: 8500 nulls
+2025-09-29 19:12:18 | INFO | __main__:extract_patients_data:56 - Starting patients data extraction...
+2025-09-29 19:12:18 | INFO | __main__:extract_patients_data:64 - Generated sample patients data
+2025-09-29 19:12:18 | INFO | utils:save_parquet_with_metadata:86 - Saved 5000 rows to ./data/bronze/patients_raw.parquet
+2025-09-29 19:12:18 | INFO | utils:log_dataframe_info:59 - EXTRACT - patients: 5000 rows, 8 columns
+2025-09-29 19:12:18 | INFO | utils:log_dataframe_info:60 - Memory usage: 1.09 MB
+2025-09-29 19:12:18 | INFO | __main__:extract_providers_data:83 - Starting providers data extraction...
+2025-09-29 19:12:18 | INFO | __main__:extract_providers_data:91 - Generated sample providers data
+2025-09-29 19:12:18 | INFO | utils:save_parquet_with_metadata:86 - Saved 100 rows to ./data/bronze/providers_raw.parquet
+2025-09-29 19:12:18 | INFO | utils:log_dataframe_info:59 - EXTRACT - providers: 100 rows, 7 columns
+2025-09-29 19:12:18 | INFO | utils:log_dataframe_info:60 - Memory usage: 0.03 MB
+2025-09-29 19:12:18 | INFO | __main__:extract_prescriptions_data:110 - Starting prescriptions data extraction...
+2025-09-29 19:12:18 | INFO | __main__:extract_prescriptions_data:118 - Generated sample prescriptions data
+2025-09-29 19:12:18 | INFO | utils:save_parquet_with_metadata:86 - Saved 15000 rows to ./data/bronze/prescriptions_raw.parquet
+2025-09-29 19:12:18 | INFO | utils:log_dataframe_info:59 - EXTRACT - prescriptions: 15000 rows, 9 columns
+2025-09-29 19:12:18 | INFO | utils:log_dataframe_info:60 - Memory usage: 1.89 MB
+2025-09-29 19:12:18 | INFO | __main__:extract_all_data:258 - Data extraction completed successfully
+2025-09-29 19:12:19 | INFO | __main__:transform_all_data:441 - Starting full data transformation...
+2025-09-29 19:12:19 | INFO | __main__:transform_claims_data:32 - Starting claims data transformation...
+2025-09-29 19:12:19 | INFO | __main__:_clean_claims_data:160 - Cleaning claims data...
+2025-09-29 19:12:19 | INFO | __main__:_clean_claims_data:165 - Removed 0 duplicate claims
+2025-09-29 19:12:19 | INFO | __main__:_clean_claims_data:190 - Claims data cleaned: 10000 records remaining
+2025-09-29 19:12:19 | INFO | __main__:_engineer_claims_features:273 - Engineering claims features...
+2025-09-29 19:12:19 | INFO | __main__:_engineer_claims_features:305 - Claims features engineered successfully
+2025-09-29 19:12:19 | INFO | __main__:_validate_claims_data:409 - Claims data validation completed
+2025-09-29 19:12:19 | INFO | utils:save_parquet_with_metadata:86 - Saved 10000 rows to ./data/silver/claims_clean.parquet
+2025-09-29 19:12:19 | INFO | utils:log_dataframe_info:59 - TRANSFORM - claims: 10000 rows, 19 columns
+2025-09-29 19:12:19 | INFO | utils:log_dataframe_info:60 - Memory usage: 3.31 MB
+2025-09-29 19:12:19 | WARNING | utils:log_dataframe_info:65 - Null values found in claims:
+2025-09-29 19:12:19 | WARNING | utils:log_dataframe_info:67 -   readmission_date: 8500 nulls
+2025-09-29 19:12:19 | WARNING | utils:log_dataframe_info:67 -   los_category: 510 nulls
+2025-09-29 19:12:19 | INFO | __main__:transform_patients_data:64 - Starting patients data transformation...
+2025-09-29 19:12:19 | INFO | __main__:_clean_patients_data:195 - Cleaning patients data...
+2025-09-29 19:12:19 | INFO | __main__:_clean_patients_data:200 - Removed 0 duplicate patients
+2025-09-29 19:12:19 | INFO | __main__:_clean_patients_data:219 - Patients data cleaned: 5000 records remaining
+2025-09-29 19:12:19 | INFO | __main__:_engineer_patients_features:310 - Engineering patients features...
+2025-09-29 19:12:19 | INFO | __main__:_engineer_patients_features:335 - Patients features engineered successfully
+2025-09-29 19:12:19 | INFO | __main__:_validate_patients_data:421 - Patients data validation completed
+2025-09-29 19:12:19 | INFO | utils:save_parquet_with_metadata:86 - Saved 5000 rows to ./data/silver/patients_clean.parquet
+2025-09-29 19:12:19 | INFO | utils:log_dataframe_info:59 - TRANSFORM - patients: 5000 rows, 12 columns
+2025-09-29 19:12:19 | INFO | utils:log_dataframe_info:60 - Memory usage: 1.70 MB
+2025-09-29 19:12:19 | INFO | __main__:transform_providers_data:96 - Starting providers data transformation...
+2025-09-29 19:12:19 | INFO | __main__:_clean_providers_data:224 - Cleaning providers data...
+2025-09-29 19:12:19 | INFO | __main__:_clean_providers_data:229 - Removed 0 duplicate providers
+2025-09-29 19:12:19 | INFO | __main__:_clean_providers_data:244 - Providers data cleaned: 100 records remaining
+2025-09-29 19:12:19 | INFO | __main__:_engineer_providers_features:340 - Engineering providers features...
+2025-09-29 19:12:19 | INFO | __main__:_engineer_providers_features:357 - Providers features engineered successfully
+2025-09-29 19:12:19 | INFO | __main__:_validate_providers_data:429 - Providers data validation completed
+2025-09-29 19:12:19 | INFO | utils:save_parquet_with_metadata:86 - Saved 100 rows to ./data/silver/providers_clean.parquet
+2025-09-29 19:12:19 | INFO | utils:log_dataframe_info:59 - TRANSFORM - providers: 100 rows, 12 columns
+2025-09-29 19:12:19 | INFO | utils:log_dataframe_info:60 - Memory usage: 0.04 MB
+2025-09-29 19:12:19 | INFO | __main__:transform_prescriptions_data:128 - Starting prescriptions data transformation...
+2025-09-29 19:12:19 | INFO | __main__:_clean_prescriptions_data:249 - Cleaning prescriptions data...
+2025-09-29 19:12:19 | INFO | __main__:_clean_prescriptions_data:254 - Removed 0 duplicate prescriptions
+2025-09-29 19:12:19 | INFO | __main__:_clean_prescriptions_data:268 - Prescriptions data cleaned: 15000 records remaining
+2025-09-29 19:12:19 | INFO | __main__:_engineer_prescriptions_features:362 - Engineering prescriptions features...
+2025-09-29 19:12:19 | INFO | __main__:_engineer_prescriptions_features:393 - Prescriptions features engineered successfully
+2025-09-29 19:12:19 | INFO | __main__:_validate_prescriptions_data:437 - Prescriptions data validation completed
+2025-09-29 19:12:19 | INFO | utils:save_parquet_with_metadata:86 - Saved 15000 rows to ./data/silver/prescriptions_clean.parquet
+2025-09-29 19:12:19 | INFO | utils:log_dataframe_info:59 - TRANSFORM - prescriptions: 15000 rows, 16 columns
+2025-09-29 19:12:19 | INFO | utils:log_dataframe_info:60 - Memory usage: 3.31 MB
+2025-09-29 19:12:19 | INFO | __main__:transform_all_data:451 - Data transformation completed successfully
+2025-09-30 17:52:03 | INFO | __main__:extract_all_data:245 - Starting full data extraction...
+2025-09-30 17:52:03 | INFO | __main__:extract_claims_data:29 - Starting claims data extraction...
+2025-09-30 17:52:03 | INFO | __main__:extract_claims_data:37 - Generated sample claims data
+2025-09-30 17:52:03 | INFO | utils:save_parquet_with_metadata:86 - Saved 10000 rows to ./data/bronze/claims_raw.parquet
+2025-09-30 17:52:03 | INFO | utils:log_dataframe_info:59 - EXTRACT - claims: 10000 rows, 11 columns
+2025-09-30 17:52:03 | INFO | utils:log_dataframe_info:60 - Memory usage: 2.42 MB
+2025-09-30 17:52:03 | WARNING | utils:log_dataframe_info:65 - Null values found in claims:
+2025-09-30 17:52:03 | WARNING | utils:log_dataframe_info:67 -   readmission_date: 8500 nulls
+2025-09-30 17:52:03 | INFO | __main__:extract_patients_data:56 - Starting patients data extraction...
+2025-09-30 17:52:03 | INFO | __main__:extract_patients_data:64 - Generated sample patients data
+2025-09-30 17:52:03 | INFO | utils:save_parquet_with_metadata:86 - Saved 5000 rows to ./data/bronze/patients_raw.parquet
+2025-09-30 17:52:03 | INFO | utils:log_dataframe_info:59 - EXTRACT - patients: 5000 rows, 8 columns
+2025-09-30 17:52:03 | INFO | utils:log_dataframe_info:60 - Memory usage: 1.09 MB
+2025-09-30 17:52:03 | INFO | __main__:extract_providers_data:83 - Starting providers data extraction...
+2025-09-30 17:52:03 | INFO | __main__:extract_providers_data:91 - Generated sample providers data
+2025-09-30 17:52:03 | INFO | utils:save_parquet_with_metadata:86 - Saved 100 rows to ./data/bronze/providers_raw.parquet
+2025-09-30 17:52:03 | INFO | utils:log_dataframe_info:59 - EXTRACT - providers: 100 rows, 7 columns
+2025-09-30 17:52:03 | INFO | utils:log_dataframe_info:60 - Memory usage: 0.03 MB
+2025-09-30 17:52:03 | INFO | __main__:extract_prescriptions_data:110 - Starting prescriptions data extraction...
+2025-09-30 17:52:03 | INFO | __main__:extract_prescriptions_data:118 - Generated sample prescriptions data
+2025-09-30 17:52:03 | INFO | utils:save_parquet_with_metadata:86 - Saved 15000 rows to ./data/bronze/prescriptions_raw.parquet
+2025-09-30 17:52:03 | INFO | utils:log_dataframe_info:59 - EXTRACT - prescriptions: 15000 rows, 9 columns
+2025-09-30 17:52:03 | INFO | utils:log_dataframe_info:60 - Memory usage: 1.89 MB
+2025-09-30 17:52:03 | INFO | __main__:extract_all_data:258 - Data extraction completed successfully
+2025-09-30 17:52:05 | INFO | __main__:transform_all_data:441 - Starting full data transformation...
+2025-09-30 17:52:05 | INFO | __main__:transform_claims_data:32 - Starting claims data transformation...
+2025-09-30 17:52:05 | INFO | __main__:_clean_claims_data:160 - Cleaning claims data...
+2025-09-30 17:52:05 | INFO | __main__:_clean_claims_data:165 - Removed 0 duplicate claims
+2025-09-30 17:52:05 | INFO | __main__:_clean_claims_data:190 - Claims data cleaned: 10000 records remaining
+2025-09-30 17:52:05 | INFO | __main__:_engineer_claims_features:273 - Engineering claims features...
+2025-09-30 17:52:05 | INFO | __main__:_engineer_claims_features:305 - Claims features engineered successfully
+2025-09-30 17:52:05 | INFO | __main__:_validate_claims_data:409 - Claims data validation completed
+2025-09-30 17:52:05 | INFO | utils:save_parquet_with_metadata:86 - Saved 10000 rows to ./data/silver/claims_clean.parquet
+2025-09-30 17:52:05 | INFO | utils:log_dataframe_info:59 - TRANSFORM - claims: 10000 rows, 19 columns
+2025-09-30 17:52:05 | INFO | utils:log_dataframe_info:60 - Memory usage: 3.31 MB
+2025-09-30 17:52:05 | WARNING | utils:log_dataframe_info:65 - Null values found in claims:
+2025-09-30 17:52:05 | WARNING | utils:log_dataframe_info:67 -   readmission_date: 8500 nulls
+2025-09-30 17:52:05 | WARNING | utils:log_dataframe_info:67 -   los_category: 510 nulls
+2025-09-30 17:52:05 | INFO | __main__:transform_patients_data:64 - Starting patients data transformation...
+2025-09-30 17:52:05 | INFO | __main__:_clean_patients_data:195 - Cleaning patients data...
+2025-09-30 17:52:05 | INFO | __main__:_clean_patients_data:200 - Removed 0 duplicate patients
+2025-09-30 17:52:05 | INFO | __main__:_clean_patients_data:219 - Patients data cleaned: 5000 records remaining
+2025-09-30 17:52:05 | INFO | __main__:_engineer_patients_features:310 - Engineering patients features...
+2025-09-30 17:52:05 | INFO | __main__:_engineer_patients_features:335 - Patients features engineered successfully
+2025-09-30 17:52:05 | INFO | __main__:_validate_patients_data:421 - Patients data validation completed
+2025-09-30 17:52:05 | INFO | utils:save_parquet_with_metadata:86 - Saved 5000 rows to ./data/silver/patients_clean.parquet
+2025-09-30 17:52:05 | INFO | utils:log_dataframe_info:59 - TRANSFORM - patients: 5000 rows, 12 columns
+2025-09-30 17:52:05 | INFO | utils:log_dataframe_info:60 - Memory usage: 1.70 MB
+2025-09-30 17:52:05 | INFO | __main__:transform_providers_data:96 - Starting providers data transformation...
+2025-09-30 17:52:05 | INFO | __main__:_clean_providers_data:224 - Cleaning providers data...
+2025-09-30 17:52:05 | INFO | __main__:_clean_providers_data:229 - Removed 0 duplicate providers
+2025-09-30 17:52:05 | INFO | __main__:_clean_providers_data:244 - Providers data cleaned: 100 records remaining
+2025-09-30 17:52:05 | INFO | __main__:_engineer_providers_features:340 - Engineering providers features...
+2025-09-30 17:52:05 | INFO | __main__:_engineer_providers_features:357 - Providers features engineered successfully
+2025-09-30 17:52:05 | INFO | __main__:_validate_providers_data:429 - Providers data validation completed
+2025-09-30 17:52:05 | INFO | utils:save_parquet_with_metadata:86 - Saved 100 rows to ./data/silver/providers_clean.parquet
+2025-09-30 17:52:05 | INFO | utils:log_dataframe_info:59 - TRANSFORM - providers: 100 rows, 12 columns
+2025-09-30 17:52:05 | INFO | utils:log_dataframe_info:60 - Memory usage: 0.04 MB
+2025-09-30 17:52:05 | INFO | __main__:transform_prescriptions_data:128 - Starting prescriptions data transformation...
+2025-09-30 17:52:05 | INFO | __main__:_clean_prescriptions_data:249 - Cleaning prescriptions data...
+2025-09-30 17:52:05 | INFO | __main__:_clean_prescriptions_data:254 - Removed 0 duplicate prescriptions
+2025-09-30 17:52:05 | INFO | __main__:_clean_prescriptions_data:268 - Prescriptions data cleaned: 15000 records remaining
+2025-09-30 17:52:05 | INFO | __main__:_engineer_prescriptions_features:362 - Engineering prescriptions features...
+2025-09-30 17:52:05 | INFO | __main__:_engineer_prescriptions_features:393 - Prescriptions features engineered successfully
+2025-09-30 17:52:05 | INFO | __main__:_validate_prescriptions_data:437 - Prescriptions data validation completed
+2025-09-30 17:52:05 | INFO | utils:save_parquet_with_metadata:86 - Saved 15000 rows to ./data/silver/prescriptions_clean.parquet
+2025-09-30 17:52:05 | INFO | utils:log_dataframe_info:59 - TRANSFORM - prescriptions: 15000 rows, 16 columns
+2025-09-30 17:52:05 | INFO | utils:log_dataframe_info:60 - Memory usage: 3.31 MB
+2025-09-30 17:52:05 | INFO | __main__:transform_all_data:451 - Data transformation completed successfully

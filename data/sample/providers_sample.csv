@@ -1,0 +1,101 @@
+provider_id,hospital_name,provider_type,state,city,beds,teaching_hospital
+1,St. Mary's Hospital,Clinic,FL,City_1,885,True
+2,University Hospital,Clinic,AZ,City_2,488,False
+3,Southwest Medical,Clinic,FL,City_3,252,True
+4,Westside Medical Center,Specialty,CO,City_4,233,True
+5,Central Medical,Clinic,IL,City_5,172,False
+6,Children's Hospital,Emergency,OH,City_6,450,True
+7,Southwest Medical,Specialty,OH,City_7,816,False
+8,Community Health Center,Emergency,AZ,City_8,343,True
+9,St. Mary's Hospital,Specialty,TN,City_9,329,False
+10,Valley Regional Hospital,Clinic,VA,City_10,886,True
+11,Regional Health System,Emergency,AZ,City_11,933,False
+12,St. Mary's Hospital,Specialty,FL,City_12,659,False
+13,Central Medical,Hospital,AZ,City_13,247,False
+14,Central Medical,Clinic,OH,City_14,956,False
+15,Children's Hospital,Specialty,VA,City_15,560,False
+16,Community Health Center,Hospital,TX,City_16,801,True
+17,University Hospital,Specialty,PA,City_17,193,True
+18,Children's Hospital,Hospital,WA,City_18,658,True
+19,Children's Hospital,Clinic,NY,City_19,250,False
+20,Regional Health System,Emergency,MI,City_20,173,True
+21,Metro General,Hospital,AZ,City_21,236,False
+22,Community Health Center,Specialty,CO,City_22,375,False
+23,City Medical Center,Clinic,NC,City_23,513,True
+24,Children's Hospital,Hospital,IL,City_24,398,True
+25,Northside Hospital,Specialty,PA,City_25,820,False
+26,Eastside Health,Specialty,WA,City_26,709,True
+27,Metro General,Specialty,WA,City_27,813,False
+28,City Medical Center,Hospital,WA,City_28,981,False
+29,Northside Hospital,Hospital,WA,City_29,452,False
+30,Community Health Center,Hospital,FL,City_30,395,False
+31,General Hospital,Emergency,CO,City_31,560,False
+32,Northside Hospital,Hospital,CO,City_32,196,True
+33,Valley Regional Hospital,Hospital,VA,City_33,197,True
+34,Metro General,Hospital,MI,City_34,913,False
+35,Southwest Medical,Emergency,OH,City_35,760,False
+36,Northside Hospital,Hospital,WA,City_36,869,True
+37,Memorial Medical,Specialty,NC,City_37,538,True
+38,General Hospital,Hospital,OH,City_38,978,False
+39,Central Medical,Specialty,CO,City_39,985,True
+40,Central Medical,Specialty,CA,City_40,689,False
+41,Westside Medical Center,Specialty,CA,City_41,600,True
+42,Valley Regional Hospital,Emergency,NC,City_42,387,False
+43,Northside Hospital,Emergency,VA,City_43,921,True
+44,Northside Hospital,Emergency,CO,City_44,690,False
+45,Westside Medical Center,Hospital,NC,City_45,828,True
+46,Eastside Health,Specialty,FL,City_46,522,True
+47,Eastside Health,Emergency,AZ,City_47,995,False
+48,Westside Medical Center,Emergency,NC,City_48,200,True
+49,Eastside Health,Hospital,TX,City_49,464,False
+50,Regional Health System,Emergency,OH,City_50,347,True
+51,Northside Hospital,Hospital,PA,City_51,660,False
+52,St. Mary's Hospital,Clinic,GA,City_52,312,True
+53,University Hospital,Emergency,VA,City_53,813,False
+54,Memorial Medical,Clinic,NC,City_54,193,True
+55,Regional Health System,Hospital,CO,City_55,395,False
+56,Community Health Center,Specialty,IL,City_56,673,True
+57,Regional Health System,Emergency,CA,City_57,621,False
+58,St. Mary's Hospital,Hospital,TX,City_58,930,False
+59,Community Health Center,Specialty,MI,City_59,51,False
+60,Memorial Medical,Specialty,WA,City_60,946,True
+61,St. Mary's Hospital,Clinic,GA,City_61,353,False
+62,City Medical Center,Hospital,TN,City_62,303,True
+63,University Hospital,Specialty,VA,City_63,701,False
+64,Memorial Medical,Emergency,PA,City_64,502,True
+65,Northside Hospital,Emergency,GA,City_65,86,False
+66,Eastside Health,Clinic,NC,City_66,209,True
+67,City Medical Center,Specialty,FL,City_67,58,True
+68,Valley Regional Hospital,Hospital,CA,City_68,282,False
+69,Memorial Medical,Emergency,CO,City_69,148,True
+70,Valley Regional Hospital,Specialty,CA,City_70,708,True
+71,Community Health Center,Specialty,MI,City_71,865,False
+72,City Medical Center,Clinic,FL,City_72,257,True
+73,University Hospital,Emergency,WA,City_73,180,True
+74,Northside Hospital,Emergency,CO,City_74,453,True
+75,Westside Medical Center,Hospital,OH,City_75,201,False
+76,Northside Hospital,Emergency,NY,City_76,103,True
+77,St. Mary's Hospital,Hospital,TX,City_77,169,False
+78,Northside Hospital,Emergency,CA,City_78,722,True
+79,Southwest Medical,Clinic,IL,City_79,969,True
+80,Children's Hospital,Emergency,CA,City_80,677,True
+81,Westside Medical Center,Hospital,GA,City_81,636,False
+82,Regional Health System,Hospital,CA,City_82,674,True
+83,Eastside Health,Clinic,VA,City_83,469,True
+84,General Hospital,Emergency,CA,City_84,471,False
+85,University Hospital,Emergency,NY,City_85,153,True
+86,City Medical Center,Clinic,NY,City_86,901,False
+87,Children's Hospital,Emergency,WA,City_87,303,False
+88,University Hospital,Emergency,PA,City_88,276,True
+89,City Medical Center,Hospital,OH,City_89,161,False
+90,Eastside Health,Emergency,IL,City_90,559,True
+91,Metro General,Emergency,CA,City_91,522,False
+92,Metro General,Clinic,CA,City_92,148,False
+93,Valley Regional Hospital,Clinic,TX,City_93,202,True
+94,University Hospital,Specialty,CO,City_94,910,False
+95,Metro General,Hospital,NY,City_95,963,False
+96,Southwest Medical,Emergency,IL,City_96,945,False
+97,Westside Medical Center,Emergency,WA,City_97,927,False
+98,City Medical Center,Specialty,MI,City_98,387,False
+99,Valley Regional Hospital,Emergency,PA,City_99,755,True
+100,Northside Hospital,Hospital,OH,City_100,871,False

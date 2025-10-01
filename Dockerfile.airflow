@@ -1,0 +1,27 @@
+FROM apache/airflow:2.7.3-python3.9
+
+# Switch to root user to install system dependencies
+USER root
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Switch back to airflow user
+USER airflow
+
+# Install Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application code
+COPY src/ /opt/airflow/src/
+COPY dags/ /opt/airflow/dags/
+COPY data/ /opt/airflow/data/
+
+# Set environment variables
+ENV PYTHONPATH=/opt/airflow/src
+ENV AIRFLOW_HOME=/opt/airflow
