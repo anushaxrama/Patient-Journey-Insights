@@ -1,9 +1,9 @@
 # Healthcare ETL Pipeline & Analytics Platform
 
-## 🏥 Business Problem
+##  Business Problem
 Hospitals and healthcare systems need to reduce readmissions, optimize treatment costs, and improve patient outcomes. This project demonstrates how to build a comprehensive ETL pipeline that processes healthcare claims and EHR data to provide actionable insights for healthcare decision-makers.
 
-## 🎯 Solution Overview
+##  Solution Overview
 A modern data engineering pipeline that:
 - **Extracts** raw healthcare data from multiple sources
 - **Transforms** and cleans data using industry-standard practices
@@ -12,7 +12,7 @@ A modern data engineering pipeline that:
 - **Visualizes** insights through interactive dashboards
 - **Enables** natural language queries through AI-powered chatbot
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Data Processing**: Python (pandas, PySpark)
 - **Database**: PostgreSQL
 - **Orchestration**: Apache Airflow
@@ -21,7 +21,7 @@ A modern data engineering pipeline that:
 - **Version Control**: GitHub
 - **Cloud**: Docker, AWS (optional)
 
-## 📁 Project Structure
+##  Project Structure
 ```
 healthcare-etl-pipeline/
 ├── src/                    # Python ETL scripts
@@ -50,7 +50,7 @@ healthcare-etl-pipeline/
 └── README.md            # This file
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -85,7 +85,7 @@ docker-compose up -d
 open http://localhost:8501
 ```
 
-## 📊 Key Features
+## Key Features
 
 ### Data Pipeline
 - **Bronze Layer**: Raw data ingestion with audit trails
@@ -104,13 +104,13 @@ open http://localhost:8501
 - Automated insight generation
 - Predictive analytics for readmissions
 
-## 📈 Business Impact
+##  Business Impact
 - **Cost Reduction**: Identify high-cost conditions and optimize treatment
 - **Quality Improvement**: Track and reduce readmission rates
 - **Operational Efficiency**: Streamline data processing and reporting
 - **Strategic Decision Making**: Data-driven insights for healthcare leaders
 
-## 🔧 Architecture
+##  Architecture
 
 ```mermaid
 graph TB
@@ -127,7 +127,7 @@ graph TB
     I --> D
 ```
 
-## 📋 Sample Queries
+## Sample Queries
 
 ### Top Cost Drivers
 ```sql
@@ -148,31 +148,22 @@ GROUP BY hospital_name
 ORDER BY readmission_rate DESC;
 ```
 
-## 🤖 AI Chatbot
+## AI Chatbot
 Ask natural language questions like:
 - "Which diagnosis groups drive 80% of costs?"
 - "Show me readmission rates by region"
 - "What's the average cost per patient for diabetes?"
 
-## 📊 Dashboard Features
+## Dashboard Features
 - **KPI Cards**: Key metrics at a glance
 - **Cost Analysis**: Breakdown by diagnosis and provider
 - **Readmission Tracking**: Trends and patterns
 - **Geographic Analysis**: Regional performance
 - **Patient Journey**: End-to-end care tracking
 
-## 🎯 Next Steps
+## Next Steps
 1. **Scale**: Migrate to cloud (AWS/Azure)
 2. **Real-time**: Implement streaming data processing
 3. **ML Models**: Add predictive analytics
 4. **Integration**: Connect to EHR systems
 5. **Compliance**: Add HIPAA security measures
-
-## 📞 Contact
-For questions or collaboration opportunities, please reach out through GitHub issues or LinkedIn.
-
-## 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-*Built with ❤️ for healthcare data professionals*
